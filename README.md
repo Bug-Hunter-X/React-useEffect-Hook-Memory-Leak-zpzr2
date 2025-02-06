@@ -1,0 +1,2 @@
+# React useEffect Hook Memory Leak
+This example demonstrates a common mistake when using the `useEffect` hook in React: forgetting to include a cleanup function to prevent memory leaks.  The `setInterval` function creates a new interval every time the component renders.  Without cleanup, these intervals accumulate, leading to a memory leak.  The solution demonstrates the proper use of the cleanup function to resolve this issue.
